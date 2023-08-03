@@ -11,3 +11,10 @@ int main()
 		printf("\nnot a comment line");
 	}
 }
+
+o/p
+enter the string//saveetha//
+it is a comment
+--------------------------------
+Process exited after 5.162 seconds with return value 0
+Press any key to continue . . .

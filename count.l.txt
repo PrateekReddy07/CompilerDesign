@@ -19,3 +19,21 @@ int main() {
    printf("Lines: %d, Words: %d, Characters: %d\n", lines, words, chars);
    return 0;
 }
+
+o/p
+Microsoft Windows [Version 10.0.22621.1992]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\varad>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\varad>flex count.l.txt
+
+C:\Users\varad>set path=C:\MinGW\bin
+
+C:\Users\varad>gcc lex.yy.c
+
+C:\Users\varad>a
+saveetha school of engneering
+compiler design
+3082023
+3082023Lines: 3, Words: 6, Characters: 13

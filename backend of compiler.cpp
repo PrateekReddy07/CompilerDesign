@@ -37,3 +37,31 @@ do
  printf("\n\tMov R%d,%c",i,str[0]);
  }while(strcmp(icode[++i],"exit")!=0);
 }
+
+
+o/p
+ Enter the set of intermediate code (terminated by exit):
+a=a*b
+c=f*h
+g=a*h
+f=Q+W
+t=q-j
+exit
+
+ target code generation
+************************
+        Mov a,R0
+        MULb,R0
+        Mov R0,a
+        Mov f,R1
+        MULh,R1
+        Mov R1,c
+        Mov a,R2
+        MULh,R2
+        Mov R2,g
+        Mov Q,R3
+        ADDW,R3
+        Mov R3,f
+        Mov q,R4
+        SUBj,R4
+        Mov R4,t

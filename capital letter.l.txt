@@ -13,3 +13,17 @@ int main() {
     fclose(yyin);
     return 0;
 }
+
+o/p
+C:\Users\Prateek>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\Prateek>flex cap.l.txt
+
+C:\Users\Prateek>set path=C:\MinGW\bin
+
+C:\Users\Prateek>gcc lex.yy.c
+
+C:\Users\Prateek>a
+PRATeek
+
+Number of capital letters: 4

@@ -70,3 +70,11 @@ void  addToResult(char c)
             return;
    followResult[m++]=c;
 }
+
+
+o/p
+output:
+enter the no of productions:2
+enter the production:S ->Aa | Ac
+A ->b  
+Here, FOLLOW (A) = {a, c}

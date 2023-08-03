@@ -49,3 +49,15 @@ int main()
     j++;
    }}}}
 
+o/p
+ enter the stringx=a+b
+symbol  value   address  token
+x       8        6487456         identifier
+=                6487457          operator
+a       10       6487458          identifier
++                6487459          operator
+b       5        6487460         identifier
+
+--------------------------------
+Process exited after 15.34 seconds with return value 0
+Press any key to continue . . .

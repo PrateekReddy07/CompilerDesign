@@ -10,3 +10,17 @@ int main() {
     yylex();
     return 0;
 }
+
+o/p
+C:\Users\prateek>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\prateek>flex conso.l.txt
+
+C:\Users\prateek>set path=C:\MinGW\bin
+
+C:\Users\prateek>gcc lex.yy.c
+
+C:\Users\prateek>a
+CDHUaanu
+
+consonants are:CDHn

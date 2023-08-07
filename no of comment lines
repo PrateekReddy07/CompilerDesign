@@ -1,0 +1,43 @@
+%{
+int c=0;
+%}
+%%
+"//"|"/*"[a-z]+ {c++;printf("\n %s is a comment line \n",yytext);}
+.+ {printf("The Given input is not comment line");}
+%%
+int yywrap(){}
+int main()
+{
+printf("enter : ");
+yylex();
+printf("\nno of comments:%d",c);
+return 0;
+}
+***************************************************************************************************************
+Output:
+C:\Users\varada>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\varada>flex comment.l.txt
+
+C:\Users\varada>set path=C:\MinGW\bin
+
+C:\Users\varada>gcc lex.yy.c
+
+C:\Users\varada>a
+enter : //hello
+The Given input is not comment line
+no of comments:0
+C:\Users\harsh>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\varada>flex comment.l.txt
+
+C:\Users\varada>set path=C:\MinGW\bin
+
+C:\Users\varada>gcc lex.yy.c
+
+C:\Users\varada>a
+enter : /*hello
+
+ /*hello is a comment line
+
+no of comments:1

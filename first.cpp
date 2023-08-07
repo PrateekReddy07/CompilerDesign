@@ -37,3 +37,20 @@ int main()
 		printf(check(s[i]));
 	}
 }
+
+
+o/p
+	Input:
+E  -> TR
+R  -> +T R| #
+T  -> F Y
+Y  -> *F Y | #
+F  -> (E) | i
+
+
+Output :
+First(E)= { (, i, }
+First(R)= { +, #, }
+First(T)= { (, i, }
+First(Y)= { *, #, }
+First(F)= { (, i, }

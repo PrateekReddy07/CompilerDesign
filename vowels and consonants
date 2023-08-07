@@ -39,3 +39,18 @@ int main() {
     fclose(file);
     return 0;
 }
+
+o/p
+C:\Users\varada>set path=C:\Program Files (x86)\GnuWin32\bin
+C:\Users\varada>flex vowelsandconso.l.txt
+C:\Users\varada>set path=C:\MinGW\bin
+C:\Users\varada>gcc lex.yy.c
+C:\Users\varada>a
+enter : hihello
+h is a consonant
+i is a vowel
+h is a consonant
+e is a vowel
+l is a consonant
+l is a consonant
+o is a vowel

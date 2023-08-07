@@ -38,3 +38,14 @@ int main() {
 
     return 0;
 }
+
+output
+Enter string:a=b*c/d*e
+mem     op      a1      a2
+
+(0)     :=      c
+(1)     *       b       (0)
+(2)     :=      d
+(3)     /       (1)     (2)
+(4)     :=      e
+(5)     *       (3)     (4)

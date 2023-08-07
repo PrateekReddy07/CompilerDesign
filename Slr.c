@@ -236,3 +236,9 @@ void main()
     printf("\n\n\n\t\tPRESS ANY KEY TO EXIT");
     getch();
 }
+
+o/p
+    output
+Input: id+id*id
+Parsing error!
+Rejected

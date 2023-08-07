@@ -58,3 +58,4 @@ int main()
 output:
 Enter String with $ at the end
 abab$
+parsing succesfull

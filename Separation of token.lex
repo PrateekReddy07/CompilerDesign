@@ -18,3 +18,15 @@ yyin=fopen(argv[1],"r");
 yyout=fopen("output.c","w");
 yylex();
 }
+
+o/p
+C:\Users\varada>set path=C:\Program Files (x86)\GnuWin32\bin
+C:\Users\varada>flex email.l.txt
+C:\Users\varada>C:\MinGW\bin
+C:\Users\varada>set path=C:\MinGW\bin
+C:\Users\varada>gcc lex.yy.c
+C:\Users\varada>a
+$prateek07*
+word: prateek
+number:07
+special characters:$*

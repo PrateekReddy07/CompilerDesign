@@ -12,3 +12,18 @@ int main() {
     yylex();
     return 0;
 }
+
+Output:Output:
+C:\Users\varada>set path=C:\Program Files (x86)\GnuWin32\bin
+C:\Users\varada>flex addline.l.txt
+C:\Users\varada>set path=C:\MinGW\bin
+C:\Users\varada>gcc lex.yy.c
+C:\Users\varada>a
+1 #include<stdio.h>
+2 // Driver Code
+3 int main()
+4 {
+5 int a; 
+6 /* we have to delete comments */
+7 return 0;
+8 }

@@ -69,3 +69,20 @@ int main()
 		printf("REJECT\n");
 	}
 }
+
+Output:
+GRAMMAR : -
+E->2E2
+E->3E3
+E->4
+
+ stack   input   action
+$       32423$  SHIFT
+$       3$      SHIFT
+$       32$     SHIFT
+$       324$    REDUCE TO E->4
+$32E    23$     SHIFT
+$       32E2$   REDUCE TO E->2E2
+$3E     3$      SHIFT
+$       3E3$    REDUCE TO E->3E3
+$E      $       ACCEPT

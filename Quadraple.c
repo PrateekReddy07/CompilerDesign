@@ -50,3 +50,15 @@ printf("\n(%d)\t:=\tt%d\t\t%c",m,t-1,line[0]);
 m++;
 return 0;
 }
+
+o/p
+  Enter an infix expression: d=a+b
+Three Address Code:
+t1 = d = a
+t2 = t1  + b
+t3 = t2
+mem     op      a1      a2      res
+
+0       :=      b                t1
+1       +       a       t1       t2
+2       :=      t2              d

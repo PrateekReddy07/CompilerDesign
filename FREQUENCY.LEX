@@ -20,3 +20,15 @@ int main(void) {
 }
 
 O/P
+Output:
+C:\Users\varada>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\varada>flex freq.l.txt
+
+C:\Users\varada>set path=C:\MinGW\bin
+
+C:\Users\varada>gcc lex.yy.c
+
+C:\Users\varada>a
+enter: The sky is blue, rise is red.
+word frequency:is=2

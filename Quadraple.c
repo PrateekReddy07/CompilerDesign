@@ -8,47 +8,12 @@ printf("Enter string:");
 gets(line);
 for(i=0;i<20;i++)s[i]=0;
 printf("mem\top\ta1\ta2\tres\n");
-for(i=2;line[i]!='\0';i++)
+for(i=1;i<2;i++)
 {
-if(line[i]=='/' || line[i]=='*')
-{
-if(s[i]==0)
-{
-if(s[i+1]==0)
-{
-printf("\n(%d)\t:=\t%c\t\t t%d\n",m,line[i+1],t);
-m++;
-s[i+1]=t++;
+printf("\n(%d)\t%c \t%c \t%c \tt%d\n",m,line[i+2],line[i+1],line[i+3],i);
+printf("\n(%d)\t%c \tt%d \t%c \tt%d\n",m+1,line[i+4],i,line[i+5],i+1);
+printf("\n(%d)\t%c \t%c \tt%d\n",m+2,line[i],line[i-1],i+1);
 }
-printf("(%d)\t%c\t",m,line[i]);
-m++;
-(s[i-1]==0)?printf("%c\t",line[i-1]):printf("t%d\t",s[i-1]);
-printf("t%d \t t%d",s[i+1],t);
-s[i-1]=s[i+1]=t++;
-s[i]=1;
-}}}
-for(i=2;line[i]!='\0';i++)
-{
-if(line[i]=='+' || line[i]=='-')
-{
-if(s[i]==0)
-{
-if(s[i+1]==0)
-{
-printf("\n(%d)\t:=\t%c\t\t t%d\n",m,line[i+1],t);
-m++;
-s[i+1]=t++;
-}
-printf("(%d)\t%c\t",m,line[i]);
-m++;
-(s[i-1]==0)?printf("%c\t",line[i-1]):printf("t%d\t",s[i-1]);
-printf("t%d \t t%d",s[i+1],t);
-s[i-1]=s[i+1]=t++;
-s[i]=1;
-}}}
-printf("\n(%d)\t:=\tt%d\t\t%c",m,t-1,line[0]);
-m++;
-return 0;
 }
 
 o/p
